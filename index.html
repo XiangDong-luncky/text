@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="禾间，一间藏在静安区的时令小馆。随四季更换菜单，提供晚餐、小酌与预订。"
+    />
+    <meta name="theme-color" content="#172019" />
+    <title>禾间 · 时令小馆</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="禾间首页">
+        <span class="brand-cn">禾间</span>
+        <span class="brand-en">HE JIAN</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#about">小馆</a>
+        <a href="#menu">菜单</a>
+        <a href="#visit">到店</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+862162881726">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span>021 6288 1726</span>
+        </a>
+        <button class="button button-small button-dark" type="button" data-open-booking>
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M8 2v4M16 2v4M3 10h18" />
+            <rect x="3" y="4" width="18" height="18" rx="2" />
+          </svg>
+          <span>订座</span>
+        </button>
+        <button
+          class="icon-button nav-toggle"
+          type="button"
+          aria-label="打开导航"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          data-nav-toggle
+        >
+          <svg class="menu-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg class="close-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航" data-mobile-nav>
+        <a href="#about">小馆</a>
+        <a href="#menu">菜单</a>
+        <a href="#visit">到店</a>
+        <a href="tel:+862162881726">电话订座</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero-restaurant.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="hero-kicker">时令小馆 · 上海静安</p>
+          <h1 id="hero-title">
+            <span>禾间</span>
+            <small>HE JIAN</small>
+          </h1>
+          <p class="hero-copy">一席时令，一口本味。<br />把四季认真端上桌。</p>
+          <div class="hero-actions">
+            <button class="button button-light" type="button" data-open-booking>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M8 2v4M16 2v4M3 10h18" />
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+              </svg>
+              <span>预订餐桌</span>
+            </button>
+            <a class="text-link text-link-light" href="#menu">
+              <span>看看菜单</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 7h10v10M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <span class="meta-label">今日营业</span>
+            <span>11:30 — 22:00</span>
+          </div>
+          <div>
+            <span class="meta-label">小馆地址</span>
+            <span>静安区武定路 218 号</span>
+          </div>
+          <a class="round-link" href="#about" aria-label="了解更多" title="了解更多">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="section-inner about-grid">
+          <div class="about-copy reveal">
+            <p class="eyebrow">01 / 关于小馆</p>
+            <h2>把四季，<br />端上桌。</h2>
+            <p class="lead">
+              禾间是一间只有二十四席的街坊小馆。
+              我们从清晨的菜场出发，用炭火、发酵与慢炖，记录食材最好的时候。
+            </p>
+            <p class="body-copy">
+              没有固定的四季菜单，也没有多余的修饰。今天想吃什么，由土地和时令决定。
+            </p>
+            <a class="text-link text-link-dark" href="#menu">
+              <span>今日上桌</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7 7h10v10M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+
+          <figure class="about-image reveal">
+            <img
+              src="assets/interior.jpg"
+              alt="禾间餐厅温暖而安静的用餐空间"
+              loading="lazy"
+            />
+            <figcaption>
+              <span>24 席</span>
+              <span>藏在梧桐树下的小馆</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="menu-section section" id="menu">
+        <div class="section-inner">
+          <div class="menu-heading reveal">
+            <div>
+              <p class="eyebrow eyebrow-light">02 / 时令菜单</p>
+              <h2>今日上桌</h2>
+            </div>
+            <p>
+              菜单随季节小幅更换。每一道菜都从食材出发，适合慢慢吃，也适合分享。
+            </p>
+          </div>
+
+          <div class="menu-layout">
+            <figure class="menu-image reveal">
+              <img
+                src="assets/dish-table.jpg"
+                alt="炭烤肉类与时令蔬菜组成的餐桌菜品"
+                loading="lazy"
+              />
+              <figcaption>当季菜单 · 秋</figcaption>
+            </figure>
+
+            <div class="menu-content reveal">
+              <div class="menu-tabs" role="tablist" aria-label="菜单分类">
+                <button
+                  class="menu-tab is-active"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="panel-seasonal"
+                  id="tab-seasonal"
+                  tabindex="0"
+                  data-menu-tab
+                >
+                  时令菜
+                </button>
+                <button
+                  class="menu-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="panel-small"
+                  id="tab-small"
+                  tabindex="-1"
+                  data-menu-tab
+                >
+                  小食
+                </button>
+                <button
+                  class="menu-tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="panel-sweet"
+                  id="tab-sweet"
+                  tabindex="-1"
+                  data-menu-tab
+                >
+                  甜品
+                </button>
+              </div>
+
+              <div
+                class="menu-panel"
+                id="panel-seasonal"
+                role="tabpanel"
+                aria-labelledby="tab-seasonal"
+                data-menu-panel
+              >
+                <article class="menu-item">
+                  <div>
+                    <h3>青柚脆虾</h3>
+                    <p>青柚 / 脆虾 / 紫苏</p>
+                  </div>
+                  <span>¥ 48</span>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h3>炭烤牛肋条</h3>
+                    <p>牛肋条 / 烟熏萝卜 / 黑椒汁</p>
+                  </div>
+                  <span>¥ 88</span>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h3>板栗烧鸡</h3>
+                    <p>板栗 / 鸡腿 / 砂锅</p>
+                  </div>
+                  <span>¥ 68</span>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h3>松露菌菇饭</h3>
+                    <p>松露 / 什菌 / 越光米</p>
+                  </div>
+                  <span>¥ 58</span>
+                </article>
+              </div>
+
+              <div
+                class="menu-panel"
+                id="panel-small"
+                role="tabpanel"
+                aria-labelledby="tab-small"
+                data-menu-panel
+                hidden
+              >
+                <article class="menu-item">
+                  <div>
+                    <h3>桂花糖藕</h3>
+                    <p>糯米 / 桂花 / 蜂蜜</p>
+                  </div>
+                  <span>¥ 32</span>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h3>椒盐小酥肉</h3>
+                    <p>梅花肉 / 青花椒 / 海盐</p>
+                  </div>
+                  <span>¥ 38</span>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h3>手作豆腐</h3>
+                    <p>黄豆 / 酱油 / 木鱼花</p>
+                  </div>
+                  <span>¥ 28</span>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h3>渍萝卜</h3>
+                    <p>白萝卜 / 米醋 / 橙皮</p>
+                  </div>
+                  <span>¥ 18</span>
+                </article>
+              </div>
+
+              <div
+                class="menu-panel"
+                id="panel-sweet"
+                role="tabpanel"
+                aria-labelledby="tab-sweet"
+                data-menu-panel
+                hidden
+              >
+                <article class="menu-item">
+                  <div>
+                    <h3>桂花米酿</h3>
+                    <p>酒酿 / 桂花 / 小圆子</p>
+                  </div>
+                  <span>¥ 28</span>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h3>黑芝麻布丁</h3>
+                    <p>黑芝麻 / 牛奶 / 焦糖</p>
+                  </div>
+                  <span>¥ 26</span>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h3>陈皮红豆沙</h3>
+                    <p>红豆 / 陈皮 / 椰浆</p>
+                  </div>
+                  <span>¥ 22</span>
+                </article>
+              </div>
+
+              <p class="menu-note">部分菜品每日限量，菜单以到店当日为准。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit section" id="visit">
+        <div class="section-inner visit-inner">
+          <div class="visit-copy reveal">
+            <p class="eyebrow">03 / 到店</p>
+            <h2>留一席，<br />等你来。</h2>
+            <p class="lead">
+              工作日晚餐与周末建议提前预订。六人以上聚会，请直接致电小馆。
+            </p>
+            <button class="button button-dark" type="button" data-open-booking>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M8 2v4M16 2v4M3 10h18" />
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+              </svg>
+              <span>预订餐桌</span>
+            </button>
+          </div>
+
+          <div class="visit-details reveal">
+            <div class="visit-row">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              <div>
+                <span>营业时间</span>
+                <p>周二至周日<br />午市 11:30 — 14:30<br />晚市 17:30 — 22:00</p>
+              </div>
+            </div>
+            <div class="visit-row">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg>
+              <div>
+                <span>小馆地址</span>
+                <p>上海市静安区武定路 218 号<br />近昌平路地铁站</p>
+              </div>
+            </div>
+            <div class="visit-row">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <div>
+                <span>电话</span>
+                <p><a href="tel:+862162881726">021 6288 1726</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <a class="brand brand-footer" href="#home" aria-label="回到首页">
+          <span class="brand-cn">禾间</span>
+          <span class="brand-en">HE JIAN</span>
+        </a>
+        <p>时令 · 炭火 · 小馆</p>
+        <div class="footer-meta">
+          <span>© <span data-year></span> 禾间</span>
+          <a href="#home">回到顶部</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="booking-dialog" data-booking-dialog aria-labelledby="booking-title">
+      <div class="dialog-heading">
+        <div>
+          <p class="eyebrow">TABLE RESERVATION</p>
+          <h2 id="booking-title">预订一席</h2>
+        </div>
+        <button class="icon-button dialog-close" type="button" aria-label="关闭订座窗口" data-close-booking>
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M18 6 6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <form class="booking-form" data-booking-form novalidate>
+        <div class="form-row">
+          <label>
+            <span>用餐日期</span>
+            <input type="date" name="date" required data-date-input />
+          </label>
+          <label>
+            <span>用餐时间</span>
+            <select name="time" required>
+              <option value="">请选择</option>
+              <option>11:30</option>
+              <option>12:00</option>
+              <option>12:30</option>
+              <option>17:30</option>
+              <option>18:00</option>
+              <option>18:30</option>
+              <option>19:00</option>
+              <option>19:30</option>
+              <option>20:00</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span>用餐人数</span>
+            <select name="party" required>
+              <option value="">请选择</option>
+              <option>1 人</option>
+              <option>2 人</option>
+              <option>3 人</option>
+              <option>4 人</option>
+              <option>5 人</option>
+              <option>6 人</option>
+            </select>
+          </label>
+          <label>
+            <span>称呼</span>
+            <input type="text" name="name" autocomplete="name" placeholder="怎么称呼您" required />
+          </label>
+        </div>
+        <label class="full-field">
+          <span>联系电话</span>
+          <input
+            type="tel"
+            name="phone"
+            autocomplete="tel"
+            inputmode="numeric"
+            placeholder="请输入 11 位手机号"
+            pattern="1[3-9][0-9]{9}"
+            required
+          />
+          <small class="field-error" data-phone-error aria-live="polite"></small>
+        </label>
+        <label class="full-field">
+          <span>备注（选填）</span>
+          <textarea name="note" rows="2" placeholder="口味、忌口或特殊安排"></textarea>
+        </label>
+        <button class="button button-dark form-submit" type="submit">
+          <span>确认预订</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M7 7h10v10M7 17 17 7" />
+          </svg>
+        </button>
+        <p class="form-note">提交后将由小馆电话确认，预订以确认结果为准。</p>
+      </form>
+
+      <div class="booking-success" hidden data-booking-success>
+        <span class="success-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="m20 6-11 11-5-5" />
+          </svg>
+        </span>
+        <p class="eyebrow">REQUEST RECEIVED</p>
+        <h3>已收到您的订座信息</h3>
+        <p data-success-summary></p>
+        <p class="success-note">小馆会尽快致电确认，请留意来电。</p>
+        <button class="button button-dark" type="button" data-close-booking>完成</button>
+      </div>
+    </dialog>
+  </body>
+</html>
